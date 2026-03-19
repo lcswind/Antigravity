@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자 포트폴리오 | OOO</title>
+    <meta name="description" content="결과물로 말하는 프론트엔드 개발자 OOO의 포트폴리오입니다.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/components.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Dev.Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content fade-in">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="hero-title">A Developer Who<br><span class="highlight">Builds Things</span></h1>
+                <p class="hero-subtitle">결과물로 증명하는 프론트엔드 개발자입니다. 사용자에게 긍정적인 경험을 제공하는 직관적이고 아름다운 UI 구현에 관심이 많습니다.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                    <a href="#contact" class="btn btn-outline">문의하기</a>
+                </div>
+            </div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </section>
+
+        <!-- About & Tech Stack -->
+        <section id="about" class="about-section">
+            <div class="section-container fade-in">
+                <h2 class="section-title">About & Skills</h2>
+                <div class="about-grid">
+                    <div class="about-text glass-card">
+                        <p>웹 생태계를 사랑하며, 인터랙티브한 웹 애플리케이션을 개발하는 것을 주력으로 삼고 있습니다.<br>
+                        재사용 가능한 컴포넌트 아키텍처를 고민하고, 유지보수가 쉬운 코드를 작성하기 위해 늘 노력합니다.</p>
+                        <p>디자인 시스템, 접근성(a11y), 그리고 애니메이션을 활용하여 브라우저 환경에서 최상의 사용자 경험을 도출하는 일에 자부심을 느낍니다.</p>
+                    </div>
+                    <div class="skills-container glass-card" id="skills">
+                        <h3>Tech Stack</h3>
+                        <div class="skill-tags">
+                            <span class="tag">JavaScript (ES6+)</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">React.js</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">HTML5 / CSS3</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Git & Github</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects-section">
+            <div class="section-container fade-in">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card glass-card">
+                        <div class="project-content">
+                            <h3>Real-time Task Manager</h3>
+                            <p class="project-desc">React와 Firebase 실시간 데이터베이스를 활용해 사용자 간 즉각적인 상태 동기화가 가능한 협업용 태스크 관리 생태계를 구현했습니다. Firebase Auth로 인증을 구성하였습니다.</p>
+                            <div class="project-tech">
+                                <span class="tag small">React</span>
+                                <span class="tag small">Firebase</span>
+                                <span class="tag small">Styled-components</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link" target="_blank">Live Demo ↗</a>
+                                <a href="#" class="link" target="_blank">Repository ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-card">
+                        <div class="project-content">
+                            <h3>Finance Analytics Dashboard</h3>
+                            <p class="project-desc">대용량 금융 데이터를 시각화하는 B2B 대시보드 프로젝트. Chart.js 스킨 커스터마이징 및 REST API 기반의 비동기 차트 렌더링 최적화(Debouncing/Throttling)를 적용했습니다.</p>
+                            <div class="project-tech">
+                                <span class="tag small">Vanilla JS</span>
+                                <span class="tag small">Chart.js</span>
+                                <span class="tag small">CSS Modules</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link" target="_blank">Live Demo ↗</a>
+                                <a href="#" class="link" target="_blank">Repository ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 3 -->
+                    <article class="project-card glass-card">
+                        <div class="project-content">
+                            <h3>Modern Portfolio Boilerplate</h3>
+                            <p class="project-desc">웹팩(Webpack) 설정 없이 가장 가벼운 바닐라 스택만으로 제작한 반응형/다크모드 지원 포트폴리오 템플릿입니다. 성능 향상을 위한 최적화 기법들이 적용되었습니다.</p>
+                            <div class="project-tech">
+                                <span class="tag small">HTML/CSS</span>
+                                <span class="tag small">JavaScript</span>
+                                <span class="tag small">Glassmorphism</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link" target="_blank">Live Demo ↗</a>
+                                <a href="#" class="link" target="_blank">Repository ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="exp-section">
+            <div class="section-container fade-in">
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>프론트엔드 개발자 인턴십</h3>
+                            <span class="timeline-date">2025. 03 - 2025. 08 | 테크스타트업 A</span>
+                            <p>- 사내 어드민 페이지(Admin Dashboard) UI/UX 전면 개편<br>
+                               - 렌더링 최적화를 통한 데이터 로딩 속도 20% 향상<br>
+                               - 스토리북(Storybook) 도입을 통한 UI 컴포넌트 문서화 기여</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>풀스택 웹 개발 부트캠프 수료</h3>
+                            <span class="timeline-date">2024. 09 - 2025. 02</span>
+                            <p>- 1,000시간 이상의 실무형 프로젝트 및 멘토링 진행<br>
+                               - 총 3번의 메인 프로젝트 완수, 파이널 프로젝트 최우수상 수상</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact-section">
+            <div class="section-container text-center fade-in">
+                <h2 class="section-title">Get In Touch</h2>
+                <p>언제나 새로운 도전과 만남을 환영합니다.<br>협업 제안, 코드 리뷰 교류, 또는 가벼운 커피챗 등 무엇이든 환영합니다!</p>
+                <a href="mailto:hello@example.com" class="btn btn-primary mt-8">Say Hello 👋</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content text-center">
+            <p>&copy; 2026 Developer Portfolio. Built from scratch with Vanilla Web Stack.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
